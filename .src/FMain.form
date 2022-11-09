@@ -1,0 +1,39 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,57)
+  { LResult Label
+    MoveScaled(4,23,55,22)
+    Font = Font["+2"]
+    Alignment = Align.Center
+    Border = Border.Plain
+  }
+  { TBNota1 TextBox
+    MoveScaled(35,5,24,4)
+  }
+  { LFactura Label
+    MoveScaled(6,5,26,4)
+    Alignment = Align.Center
+    Text = ("Introduzca su primera nota:")
+  }
+  { BCalcular Button
+    MoveScaled(24,49,16,4)
+    Text = ("Calcular media")
+  }
+  { TBNota2 TextBox
+    MoveScaled(35,10,24,4)
+  }
+  { LFactura2 Label
+    MoveScaled(6,10,26,4)
+    Alignment = Align.Center
+    Text = ("Introduzca su segunda nota:")
+  }
+  { TBNota3 TextBox
+    MoveScaled(35,15,24,4)
+  }
+  { LFactura3 Label
+    MoveScaled(6,15,26,4)
+    Alignment = Align.Center
+    Text = ("Introduzca su tercera nota:")
+  }
+}

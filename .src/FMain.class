@@ -1,0 +1,30 @@
+' Gambas class file
+
+
+Public Sub BCalcular_Click()
+
+  Dim media As Float
+  Dim pnota As Byte = TBNota1.Text
+  Dim snota As Byte = TBNota2.Text
+  Dim tnota As Byte = TBNota3.Text
+  
+  media = (pnota + snota + tnota) / 3
+  
+  If (pnota < 0 Or snota < 0 Or tnota < 0 Or pnota > 10 Or snota > 10 Or tnota > 10) Then 
+    LResult.Text = "La nota debe de estar comprendida entre 0 y 10"
+  Else 
+    
+    If (media < 5) Then 
+      LResult.Text = "Insuficiente: " & media
+    Else If (media < 6)
+      LResult.Text = "Suficiente: " & media
+    Else If (media < 7)
+      LResult.Text = "Bien: " & media
+    Else If (media < 8.5)
+      LResult.Text = "Notable: " & media
+    Else 
+      LResult.Text = "Sobresaliente: " & media
+    Endif
+  Endif
+
+End
